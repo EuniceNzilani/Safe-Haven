@@ -1,0 +1,57 @@
+/* File: app-features.css */
+
+.app-features {
+    background-color: #f4f6f9; /* Light background color */
+    padding: 4rem 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .app-features h2 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+  }
+  
+  .features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+  }
+  
+  .feature-item {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 320px;
+    overflow: hidden;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px); /* Card lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-item h3 {
+    color: #34495e;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-item p {
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .features-list {
+      grid-template-columns: 1fr; /* Stack the features on smaller screens */
+    }
+  }
+  
